@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import songsapi from '../../apis/songsapi';
 import {
 	StyledModal,
 	CloseModalButton,
@@ -10,9 +11,19 @@ import {
 	Audio,
 	Source,
 } from './styles';
-import song from '../../assets/songs/afraidMoodSongs/Kari Jobe - I Am Not Alone (Live).mp3';
+// import song from '../../assets/songs/afraidMoodSongs/Kari Jobe - I Am Not Alone (Live).mp3';
 
 export const MusicPlayer = ({ toggleModal, modalIsOpen, moods }) => {
+	const [songSrc, setSongSrc] = useState('');
+
+	useEffect(() => {
+		async function fetchData() {
+			const res = await songsapi.get('/happyMoodSongs');
+			setSongSrc(res.data[0].src);
+		}
+		fetchData();
+	}, []);
+
 	const renderPlayer = () => {
 		return (
 			<PlayerWrapper>
@@ -20,7 +31,7 @@ export const MusicPlayer = ({ toggleModal, modalIsOpen, moods }) => {
 				<MusicArtiste>Artiste</MusicArtiste>
 				<AudioPlayerWrapper>
 					<Audio controls autoplay>
-						<Source src={song} type="audio/mpeg" />
+						<Source src={songSrc} type="audio/mpeg" />
 					</Audio>
 				</AudioPlayerWrapper>
 			</PlayerWrapper>
@@ -41,16 +52,3 @@ export const MusicPlayer = ({ toggleModal, modalIsOpen, moods }) => {
 		</StyledModal>
 	);
 };
-
-/* <PlayerWrapper key={i}>
-		<MusicTitle>{mood}</MusicTitle>
-		<MusicArtiste></MusicArtiste>
-		<AudioPlayer></AudioPlayer>
-</PlayerWrapper> */
-
-/* <div class="container-audio"> 
-    <audio controls  loop autoplay>
-      <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/new_year_dubstep_minimix.ogg" type="audio/ogg">
-       Your browser dose not Support the audio Tag
-    </audio>
-</div>*/

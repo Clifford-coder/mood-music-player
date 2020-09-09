@@ -1,43 +1,102 @@
 {
-  "happyMoodSongs": [{
-    "id": 1,
-    "title": "Happy",
-    "author": "Pharrell Williams",
-    "src": "songs/happyMoodSongs/Happy.mp3"
-  }, {
-    "id": 2,
-    "title": "Say Yes",
-    "author": "Michelle Williams",
-    "src": "songs/happyMoodSongs/Say Yes.mp3"
-  }],
-  "sadMoodSongs": [{
-    "id": 1,
-    "title": "First post!",
-    "author": "",
-    "src": "My first content!"
-  }],
-  "angryMoodSongs": [{
-    "id": 1,
-    "title": "First post!",
-    "author": "",
-    "src": "My first content!"
-  }],
-  "afriadMoodSongs": [{
-    "id": 1,
-    "title": "First post!",
-    "author": "",
-    "src": "My first content!"
-  }],
-  "disappointedMoodSongs": [{
-    "id": 1,
-    "title": "First post!",
-    "author": "",
-    "src": "My first content!"
-  }],
-  "inLoveMoodSongs": [{
-    "id": 1,
-    "title": "First post!",
-    "author": "",
-    "src": "My first content!"
-  }]
+	"songs": [
+		{
+			"happyMoodSongs": [
+				{
+					"id": 1,
+					"title": "Happy",
+					"artiste": "Pharrell Williams",
+					"src": "songs/happyMoodSongs/Happy.mp3"
+				},
+				{
+					"id": 2,
+					"title": "Say Yes",
+					"artiste": "Michelle Williams",
+					"src": "songs/happyMoodSongs/Say Yes.mp3"
+				}
+			],
+			"sadMoodSongs": [
+				{
+					"id": 1,
+					"title": "I Will Remember You",
+					"artiste": "Sarah McLachlan",
+					"src": "songs/sadMoodSongs/I Will Remember You.mp3"
+				},
+				{
+					"id": 2,
+					"title": "Coldplay",
+					"artiste": "The Scientist",
+					"src": "songs/sadMoodSongs/Coldplay.mp3"
+				}
+			],
+			"angryMoodSongs": [
+				{
+					"id": 1,
+					"title": "The Way I am (Uncensored)",
+					"artiste": "Eminem ",
+					"src": "songs/angryMoodSongs/The Way I am (Uncensored).mp3"
+				},
+				{
+					"id": 1,
+					"title": "The Way I am (Uncensored)",
+					"artiste": "Three Days Grace",
+					"src": "songs/angryMoodSongs/I Hate Everything About You.mp3"
+				}
+			],
+			"afraidMoodSongs": [
+				{
+					"id": 1,
+					"title": "I Am Not Alone",
+					"artiste": "Kari Jobe",
+					"src": "songs/afraidMoodSongs/I Am Not Alone.mp3"
+				},
+				{
+					"id": 2,
+					"title": "I Will Fear No More",
+					"artiste": "The Afters",
+					"src": "songs/afraidMoodSongs/I Will Fear No More.mp3"
+				},
+				{
+					"id": 3,
+					"title": "Fear Is a Liar",
+					"artiste": "Zach Williams ",
+					"src": "songs/afraidMoodSongs/Fear Is a Liar.mp3"
+				}
+			],
+			"disappointedMoodSongs": [
+				{
+					"id": 1,
+					"title": "Someone Like You",
+					"artiste": "Adele",
+					"src": "songs/disappointedMoodSongs/Someone Like You.mp3"
+				},
+				{
+					"id": 2,
+					"title": "Someone Like You",
+					"artiste": "Sarah McLachlan",
+					"src": "songs/disappointedMoodSongs/I Will Remember You.mp3"
+				},
+				{
+					"id": 3,
+					"title": "Not a Bad Thing ",
+					"artiste": "Justin Timberlake",
+					"src": "songs/disappointedMoodSongs/Not a Bad Thing.mp3"
+				}
+			],
+			"inLoveMoodSongs": [
+				{
+					"id": 1,
+					"title": "Your Love Is My Drug",
+					"artiste": "Kesha",
+					"src": "songs/inLoveMoodSongs/Your Love Is My Drug.mp3"
+				},
+				{
+					"id": 2,
+					"title": "You and Me",
+					"artiste": "Kesha",
+					"src": "songs/inLoveMoodSongs/You and Me.mp3"
+				}
+			]
+		}
+	]
 }
