@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import songsapi from '../../apis/songsapi';
+import React from 'react';
 import {
 	StyledModal,
 	CloseModalButton,
@@ -11,27 +10,16 @@ import {
 	Audio,
 	Source,
 } from './styles';
-// import song from '../../assets/songs/afraidMoodSongs/Kari Jobe - I Am Not Alone (Live).mp3';
 
 export const MusicPlayer = ({ toggleModal, modalIsOpen, moods }) => {
-	const [songSrc, setSongSrc] = useState('');
-
-	useEffect(() => {
-		async function fetchData() {
-			const res = await songsapi.get('/happyMoodSongs');
-			setSongSrc(res.data[0].src);
-		}
-		fetchData();
-	}, []);
-
-	const renderPlayer = () => {
+	const renderSongs = () => {
 		return (
 			<PlayerWrapper>
 				<MusicTitle>Title</MusicTitle>
 				<MusicArtiste>Artiste</MusicArtiste>
 				<AudioPlayerWrapper>
 					<Audio controls autoplay>
-						<Source src={songSrc} type="audio/mpeg" />
+						<Source src={'son'} type="audio/mpeg" />
 					</Audio>
 				</AudioPlayerWrapper>
 			</PlayerWrapper>
@@ -48,7 +36,7 @@ export const MusicPlayer = ({ toggleModal, modalIsOpen, moods }) => {
 			<CloseModalButton onClick={toggleModal}>
 				<CloseIcon className="far fa-times-circle" />
 			</CloseModalButton>
-			{renderPlayer()}
+			{renderSongs()}
 		</StyledModal>
 	);
 };

@@ -1,14 +1,14 @@
 import tw, { styled } from 'twin.macro';
 import { SectionHeading, SectionSubheading } from '../../components';
 
-export const Header = tw.div`px-6 bg-gradient-to-l from-white via-green-300  to-green-600 h-auto grid grid-cols-2`;
+export const Header = tw.div`px-6 md:bg-gradient-to-l md:from-white md:via-green-300  md:to-green-600 h-auto md:grid md:grid-cols-2 bg-gradient-to-t from-white via-green-300 to-green-600`;
 
-export const ColOneOfHeader = tw.div`col-span-1 p-10`;
+export const ColOneOfHeader = tw.div`md:col-span-1 md:p-10 p-2`;
 
-export const MusicIllustration = tw.img`w-4/5 h-auto`;
+export const MusicIllustration = tw.img`md:w-4/5 h-auto w-auto`;
 
 export const ColTwoOfHeader = styled.div`
-	${tw`flex justify-center items-center flex-col p-10`}
+	${tw`flex justify-center items-center flex-col md:p-10 p-2`}
 `;
 
 export const Heading = styled(SectionHeading)`

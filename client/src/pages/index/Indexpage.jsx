@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Container, MusicPlayer } from '../../components';
 import {
 	Header,
@@ -14,10 +14,15 @@ import {
 	Mood,
 } from './styles';
 import musicIllustration from '../../assets/img/stay-positive-animate.svg';
+import { SongsContext } from '../../store/context/songsContext';
 
 export default () => {
 	const [mood, setMood] = useState('');
 	const [modalIsOpen, setModalIsOpen] = useState(false);
+	const { happyMoodSongs, disappointedMoodSongs } = useContext(SongsContext);
+
+	console.log(happyMoodSongs);
+	console.log(disappointedMoodSongs);
 
 	const toggleModal = () => {
 		setModalIsOpen(!modalIsOpen);
@@ -31,7 +36,10 @@ export default () => {
 				<ColTwoOfHeader>
 					<Heading>Welcome to the mood music player</Heading>
 					<Subheading>
-						Play music based on your current mood buddy <span>😉</span>
+						Play music based on your current mood buddy{' '}
+						<span role="img" aria-label="winking face">
+							😉
+						</span>
 					</Subheading>
 				</ColTwoOfHeader>
 				<ColOneOfHeader>
