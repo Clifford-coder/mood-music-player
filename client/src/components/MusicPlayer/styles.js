@@ -17,23 +17,20 @@ export const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus
 
 export const CloseIcon = tw.i`text-3xl`;
 
-export const PlayerWrapper = tw.div`w-5/6 justify-center py-20 px-16 text-teal-800`;
+export const PlayerWrapper = tw.div`w-9/12 -mt-4 text-teal-800`;
 
-export const MusicTitle = tw.h2`text-3xl font-bold`;
+export const PlayerHeading = tw.h4`font-semibold text-3xl mt-8 mb-1`;
 
-export const MusicArtiste = tw.h4`text-2xl`;
+export const MusicWrapper = tw.div`cursor-pointer hover:bg-white hover:rounded hover:shadow-inner hover:scale-105 transform transition-all duration-200`;
 
-export const AudioPlayerWrapper = tw.div`w-full h-auto p-10 rounded-md bg-white my-6 mx-auto overflow-hidden`;
+export const MusicTitle = tw.h2`text-2xl font-medium mt-2!`;
 
-export const Audio = tw.audio`w-full focus:outline-none`;
+export const MusicArtiste = tw.h4`text-xl font-normal`;
+
+export const AudioPlayerWrapper = tw.div`w-full h-auto py-8 px-12 rounded-md bg-white mt-2 mx-auto overflow-hidden`;
+
+export const Audio = tw.audio`w-full focus:outline-none mt-2`;
 
 export const Source = tw.source``;
 
-//  width: 66%;
-//     height: auto;
-//     padding: 20px;
-//     border-radius: 5px;
-//     background-color: #eee;
-//     color: #444;
-//     margin: 20px auto;
-//     overflow: hidden;
+export const Analyser = tw.canvas``;

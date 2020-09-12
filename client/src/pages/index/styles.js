@@ -26,5 +26,7 @@ export const MainSubheading = tw(Subheading)`text-center`;
 export const Moods = tw.ul`text-center`;
 
 export const Mood = styled.li`
-	${tw`inline-block font-medium! cursor-pointer bg-green-600 rounded-full px-4 py-2 text-teal-700 capitalize m-4 hover:bg-white hover:shadow-inner hover:scale-105 transform transition-all duration-300`}
+	${tw`inline-block font-medium! cursor-pointer bg-green-600 rounded-full md:px-4 md:py-2 
+	text-2xl md:text-3xl lg:text-4xl px-2 py-1
+	text-teal-700 capitalize lg:m-4 md:m-2 m-1 hover:bg-white hover:shadow-inner hover:scale-105 transform transition-all duration-300`}
 `;

@@ -28,7 +28,6 @@ const SongsContextProvider = (props) => {
 			setAfraidMoodSongs(afraidMoodSongs);
 			setDisappointedMoodSongs(disappointedMoodSongs);
 			setInLoveMoodSongs(inLoveMoodSongs);
-			console.log('UseEffect is called!!');
 		}
 		getSongs();
 	}, []);
