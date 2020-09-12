@@ -91,15 +91,15 @@
 			}
 		]
 	}],
-	"schInfo": {
-		"OTC001": {
+	"schInfo": [{
+			"schPin": "OTC001",
 			"schName": "Offinso Training College",
 			"Logo": "OTC Logo"
 		},
-		"SOLFD001": {
+		{
+			"schPin": "SOLFD001",
 			"schName": "Solid Foundation",
 			"Logo": "Solid Logo"
 		}
-	}
-
+	]
 }
